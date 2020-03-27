@@ -1,0 +1,36 @@
+<!-- COMPLEMNENTO -->
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('.link-user-info').on('click', function () {
+      $('#menu-conta-lista').toggle();
+    });
+
+  });
+  function handleScrollMenu() {
+    var T = getScrollTop();
+
+    if (T >= 100) {
+      $('.principal').addClass('active');
+      $('#header-mobile').addClass('header-fixed');
+    } else {
+      $('.principal').removeClass('active');
+      $('#header-mobile').removeClass('header-fixed');
+    }
+  }
+
+  var call_after_produtos_grupos = "funcaoIncluiFavorito()";
+
+
+  function funcaoIncluiFavorito() {
+    try {
+      $('.lista-grupo .div-item').each(
+        function () {
+          $(this).append("<div class='favorites'><i class='fa fa-heart'></i> Adicionar aos favoritos</p>");
+        }
+      );
+
+    } catch (e) {
+      console.log(e.message);
+    }
+  }
+</script>

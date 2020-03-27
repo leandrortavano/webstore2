@@ -1,0 +1,153 @@
+<footer>
+    <div class="newsletter-footer">
+        <div class="container">
+            <div class="row">
+                <fieldset>
+                    <div class="col-md-4 col-xs-12 newsletter-titulo">
+                        <p><i class="fa fa-envelope-o"></i> Cadastre-se na nossa newsletter</p>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <span id="nome-news-tooltip">nome</span>
+                        <input type="text" class="input-news" id="nome-news" placeholder='Digite seu nome' value="">
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <span id="email-news-tooltip">email</span>
+                        <input type="text" class="input-news" id="email-news" placeholder='Digite seu e-mail' value="">
+                        <button id="botao-news">
+                            <span id="news-tooltip"></span>
+                            <i class="fa fa-envelope"></i>Cadastrar
+                        </button>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+    <!--depoimentos-->
+    <article class="row testimonials">
+        <div class="col-md-5 bg_rosa text-right title-testimonials">
+            <div class="color_rosa_02">
+                <i class="fa fa-comment-o"></i>
+            </div>
+            <h2 class="color_white">Depoimentos</h2>
+        </div>
+        <div class="col-md-7">
+            <div class="testimonials-carroussel">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="testimonial-img text-center">
+                            <img src="https://fesofap.portaliap.org/wp-content/uploads/2018/02/mulher_sorrindo.png"
+                                class="img-rounded" />
+                        </div>
+                    </div>
+                    <div class="col-md-8 text-center">
+                        <div class="testimonial-text">
+                            <h3><i class="fa fa-user"></i> LOREM ISPUM</h3>
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id urna eu arcu tincidunt
+                                congue eu id ante. Donec luctus volutpat facilisis. Class aptent taciti sociosqu ad
+                                litora torquent per conubia nostra, per inceptos himenaeos."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="testimonial-img text-center">
+                            <img src="https://fesofap.portaliap.org/wp-content/uploads/2018/02/mulher_sorrindo.png"
+                                class="img-rounded" />
+                        </div>
+                    </div>
+                    <div class="col-md-9 text-center">
+                        <div class="testimonial-text">
+                            <h3><i class="fa fa-user"></i> LOREM ISPUM</h3>
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id urna eu arcu tincidunt
+                                congue eu id ante. Donec luctus volutpat facilisis. Class aptent taciti sociosqu ad
+                                litora torquent per conubia nostra, per inceptos himenaeos."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+            <script type="text/javascript">
+                $('.testimonials-carroussel').slick({
+                    infinite: true,
+                    prevArrow: '<div class="slick-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>',
+                    nextArrow: '<div class="slick-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>',
+                });
+            </script>
+        </div>
+    </article>
+    <div class="footer-links">
+        <div class="container">
+            <div class="row footer-content">
+                <div class="col-md-3 col-sm-6 col-xs-12 logo-footer">
+                    <img src="https://imageswscdn.plataformawebstore.com.br//files/22491/LogoLojaTeste2020.png"
+                        alt="Logo Webstore"
+                        title="WebStore - Crie sua loja virtual e venda online - Webstore Plataforma de E-commerce" />
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <h3 class="color_rosa">Categorias</h3>
+                    <ul class="lista-footer" id="categoria-footer"></ul>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <h3 class="color_rosa">Atendimento</h3>
+                    <ul class="lista-footer" id="contato-footer"></ul>
+                    <ul class="lista-footer" id="social-footer"></ul>
+                    <span rel='ws_InfosLojas_dadoscontato_fone_1'></span>
+
+                    <div class="whats">
+                        <h4 class="color_rosa">WhatsApp</h3>
+                            <div class="whats-icon float-left">
+                                <i class="fa fa-whatsapp"></i>
+                            </div>
+                            <div class="whats-text float-left">
+                                <p>Clique aqui e fale conosco</p>
+                                <p><a href="tel:551199999999999">(11) 999999999</a></p>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <h3 class="color_rosa">Horário de Funcionamento</h3>
+                    <ul class="lista-footer" id="institucional-footer"></ul>
+
+                    <div class="social">
+                        <h4 class="color_rosa">SIGA</h3>
+                            <a href="" title="Siga no Facebook"><i class="fa fa-facebook-square"></i></a>
+                            <a href="" title="Siga no Instagram"><i class="fa fa-instagram"></i></a>
+                            <a href="" title="Siga no Youtube"><i class="fa fa-youtube-play"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 pagamento text-right">
+                    <h3 class="color_rosa">Formas de Pagamento</h3>
+                    <ul id="footer-pagamento" class="badges-footer"></ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 seguranca">
+                    <h3 class="color_rosa">Selos e Certificados</h3>
+                    <ul id="footer-seguranca" class="badges-footer">
+                        <!--##TRUSTVOX_SELO##-->
+                        <!--##SELO_EBIT##-->
+                        <li class="selo-2"></li>
+                    </ul>
+                </div>
+                <div id="cnpj-footer" class="col-xs-12 col-sm-6 text-right"></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-dev">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>2020 - Todos os direitos reservados</p>
+                </div>
+                <div class="col-md-6 text-right">
+                    <p>Desenvolvimento Webstore</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
